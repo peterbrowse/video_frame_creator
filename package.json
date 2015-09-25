@@ -1,0 +1,26 @@
+{
+  "name": "Video-Frame-Creator",
+  "version": "0.1.0",
+  "description": ".",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "gulp": "3.9.0",
+    "gulp-if" : "1.2.5",
+    "gulp-util" : "3.0.6",
+    "sprity" : "1.0.7"
+  },
+  "engines": {
+    "node": "0.12.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peterbrowse/video_frame_creator"
+  },
+  "keywords": [
+    "node",
+    "heroku"
+  ]
+}
