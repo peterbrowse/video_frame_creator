@@ -7,10 +7,7 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "gulp": "3.9.0",
-    "gulp-if" : "1.2.5",
-    "gulp-util" : "3.0.6",
-    "sprity" : "1.0.7"
+    "node-sprite-generator": "0.9.0"
   },
   "engines": {
     "node": "0.12.x"

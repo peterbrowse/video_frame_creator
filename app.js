@@ -24,20 +24,15 @@ try {
 }
 */
 
-var gulp 	= require('gulp'),
-	gulpif 	= require('gulp-if'),
-	sprity 	= require('sprity'),
-	gutil 	= require('gulp-util');;
-	
-gulp.task('sprites', function () {
-  return sprity.src({
-    src: './render/napoleon_dynamite/*.*',
-    orientation: 'horizontal',
-    margin: 0,
-    name: 'napoleon_dynamite' 
-  })
-  .pipe(gulpif('*.png', gulp.dest('./results/'), gulp.dest('./css/')))
-  .on('end', function(){ gutil.log('Done!') })
-  .on('error', function(err) { gutil.log(err)})
+var nsg = require('node-sprite-generator');
+ 
+nsg({
+    src: [
+        'render/wiggle_dancer/*.jpg'
+    ],
+    spritePath: 'results/wiggle_dancer.png',
+    layout: 'horizontal',
+}, function (err) {
+	if(err) {console.log(err)}
+    console.log('Sprite generated!');
 });
-
